@@ -279,5 +279,43 @@ export const PRODUCTS: AutoPart[] = [
       'Tipo': 'Pastilha de Freio',
     },
     shelfLocation: 'Corredor F - Prateleira 1',
+  },
+  {
+    id: 'part-08',
+    name: 'Bomba de Óleo Schadek 10.305',
+    code: '10.305',
+    brand: 'Schadek',
+    category: 'motor',
+    price: 414.95,
+    oldPrice: 480.00,
+    isWeeklyOffer: false,
+    stockCount: 4,
+    rating: 5.0,
+    reviewsCount: 8,
+    warrantyMonths: 12,
+    condition: 'Novo Original',
+    mainImage: '/images/products/schadek-10305-1.jpg',
+    stockPhotos: [
+      {
+        url: '/images/products/schadek-10305-1.jpg',
+        caption: 'Foto real da bomba de óleo na caixa',
+      },
+      {
+        url: '/images/products/schadek-10305-2.jpg',
+        caption: 'Detalhe da bomba de óleo Schadek',
+      }
+    ],
+    compatibleBrands: ['Volkswagen'],
+    compatibleModels: ['Gol', 'Voyage', 'Saveiro', 'Fox', 'Polo', 'Golf', 'SpaceFox', 'Kombi'],
+    compatibleEngines: ['1.0 8V', '1.6 8V', '1.4 8V'],
+    yearStart: 2002,
+    yearEnd: 2024,
+    description: 'Bomba de óleo Schadek, garantia de lubrificação perfeita para o motor do seu veículo. Qualidade de equipamento original.',
+    specifications: {
+      'Tipo': 'Bomba de Óleo',
+      'Material': 'Alumínio',
+      'Motor': 'EA111 / Power',
+    },
+    shelfLocation: 'Corredor M - Prateleira 2',
   }
 ];
