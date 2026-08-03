@@ -101,7 +101,7 @@ export default function ProductGrid({
       <div className="max-w-7xl mx-auto px-4">
         {/* Controls Bar */}
         <div className="bg-white p-4 rounded-2xl border border-neutral-100 shadow-sm mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 w-full md:w-auto">
             <div className="flex items-center gap-2 font-black text-neutral-900 text-xs uppercase tracking-wider">
               <SlidersHorizontal className="w-4 h-4 text-orange-600" />
               <span>Estoque Físico</span>
@@ -139,7 +139,7 @@ export default function ProductGrid({
           </div>
 
           {/* Sort selector */}
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 w-full md:w-auto mt-2 md:mt-0">
             <span className="text-xs font-bold text-neutral-400 uppercase tracking-widest whitespace-nowrap">Ordenar:</span>
             <select
               value={sortBy}
