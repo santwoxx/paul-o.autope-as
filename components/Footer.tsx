@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-orange-500 shrink-0" />
-                <span>WhatsApp: (11) 99988-7766</span>
+                <span>WhatsApp: (73) 98183-7147</span>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-orange-500 shrink-0" />

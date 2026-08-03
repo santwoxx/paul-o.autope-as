@@ -1,6 +1,6 @@
 import { AutoPart } from '@/data/products';
 
-export const STORE_WHATSAPP_NUMBER = '5511999887766'; // Standard store phone number
+export const STORE_WHATSAPP_NUMBER = '5573981837147'; // Standard store phone number
 export const STORE_NAME = 'Paulão Autopeças';
 export const STORE_ADDRESS = 'Av. Juracy Magalhães, 909 - Alto Maron, Itabuna - BA, 45604-091';
 

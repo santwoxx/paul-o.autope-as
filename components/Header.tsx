@@ -67,7 +67,7 @@ export default function Header({
               href={`tel:${STORE_WHATSAPP_NUMBER}`}
               className="flex items-center gap-1 text-neutral-300 hover:text-orange-400 transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-orange-500" /> (11) 99988-7766
+              <Phone className="w-3.5 h-3.5 text-orange-500" /> (73) 98183-7147
             </a>
             <a
               href={generateGeneralInquiryWhatsAppLink()}
