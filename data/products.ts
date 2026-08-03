@@ -100,5 +100,40 @@ export const PRODUCTS: AutoPart[] = [
       'Volume': '1 Litro',
     },
     shelfLocation: 'Corredor O - Prateleira 3',
+  },
+  {
+    id: 'part-03',
+    name: 'Óleo Dulub Power Basic Semissintético 15W-40 API SP 1L',
+    code: 'DULUB-POWER-15W40',
+    brand: 'Dulub',
+    category: 'oleos',
+    price: 34.00,
+    oldPrice: 42.00,
+    isWeeklyOffer: true,
+    offerEndsInHours: 72,
+    stockCount: 18,
+    rating: 4.8,
+    reviewsCount: 25,
+    warrantyMonths: 3,
+    condition: 'Novo Original',
+    mainImage: '/images/products/dulub-15w40.jpg',
+    stockPhotos: [
+      {
+        url: '/images/products/dulub-15w40.jpg',
+        caption: 'Foto real do produto Dulub no estoque',
+      }
+    ],
+    compatibleBrands: ['Chevrolet', 'Volkswagen', 'Fiat', 'Ford', 'Renault'],
+    compatibleModels: ['Onix', 'Gol', 'Palio', 'Ka', 'Kwid'],
+    yearStart: 2000,
+    yearEnd: 2024,
+    description: 'Óleo lubrificante semissintético ideal para proteção do motor. Adequado para motores a Gasolina, Etanol, Flex, GNV e Híbridos. Proporciona maior durabilidade das peças móveis e economia de combustível.',
+    specifications: {
+      'Viscosidade': '15W-40',
+      'Classificação API': 'SP',
+      'Tipo': 'Semissintético',
+      'Volume': '1 Litro',
+    },
+    shelfLocation: 'Corredor O - Prateleira 4',
   }
 ];
