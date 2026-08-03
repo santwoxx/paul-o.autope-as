@@ -83,9 +83,9 @@ export default function Header({
 
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-3.5">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 lg:gap-8 w-full">
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-between gap-y-3 gap-x-4 lg:gap-8 w-full">
           {/* Logo */}
-          <div className="flex items-center justify-center md:justify-start w-full md:w-auto gap-2.5 shrink-0">
+          <div className="flex items-center justify-start w-auto gap-2.5 shrink-0 order-1">
             <Image 
               src="/images/logo.png" 
               alt="Paulão Autopeças" 
@@ -97,7 +97,7 @@ export default function Header({
           </div>
 
           {/* Search Bar: Vehicle Model / Part Name */}
-          <div className="w-full md:flex-1 max-w-xl md:mx-2 lg:mx-6">
+          <div className="w-full md:w-auto md:flex-1 max-w-xl order-3 md:order-2 mt-1 md:mt-0">
             <div className="relative group">
               <input
                 type="text"
@@ -119,7 +119,7 @@ export default function Header({
           </div>
 
           {/* Actions: Vehicle Selector Badge & WhatsApp Quote Button */}
-          <div className="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto shrink-0">
+          <div className="flex items-center justify-end gap-3 w-auto shrink-0 order-2 md:order-3">
             {/* Vehicle selector button */}
             <button
               onClick={onOpenVehicleModal}
