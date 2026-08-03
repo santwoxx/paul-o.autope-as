@@ -135,5 +135,38 @@ export const PRODUCTS: AutoPart[] = [
       'Volume': '1 Litro',
     },
     shelfLocation: 'Corredor O - Prateleira 4',
+  },
+  {
+    id: 'part-04',
+    name: 'Terminal Axial Nakata N-96028',
+    code: 'N-96028',
+    brand: 'Nakata',
+    category: 'suspensao',
+    price: 75.00,
+    oldPrice: 90.00,
+    isWeeklyOffer: false,
+    stockCount: 12,
+    rating: 4.9,
+    reviewsCount: 14,
+    warrantyMonths: 6,
+    condition: 'Novo Original',
+    mainImage: '/images/products/nakata-n96028.png',
+    stockPhotos: [
+      {
+        url: '/images/products/nakata-n96028.png',
+        caption: 'Foto real do produto Nakata no estoque',
+      }
+    ],
+    compatibleBrands: ['Volkswagen', 'Ford', 'Chevrolet', 'Fiat'],
+    compatibleModels: ['Gol', 'Fox', 'Palio', 'Onix'],
+    yearStart: 2005,
+    yearEnd: 2024,
+    description: 'Terminal axial de direção Nakata de alta qualidade, garantindo maior durabilidade e estabilidade na condução do veículo.',
+    specifications: {
+      'Posição': 'Direção',
+      'Lado': 'Esquerdo/Direito',
+      'Tipo': 'Articulação Axial',
+    },
+    shelfLocation: 'Corredor S - Prateleira 2',
   }
 ];
