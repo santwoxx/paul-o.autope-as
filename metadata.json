@@ -1,0 +1,6 @@
+{
+  "name": "Loja de Autopeças",
+  "description": "Catálogo e orçamentos rápidos via WhatsApp de peças automotivas com busca por modelo de veículo e ofertas semanais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
