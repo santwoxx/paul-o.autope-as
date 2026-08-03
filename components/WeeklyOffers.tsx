@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { motion } from 'motion/react';
 import { AutoPart } from '@/data/products';
 import { Clock, Eye, MessageSquare, Percent, Sparkles, Tag, Check, ShieldCheck } from 'lucide-react';
 import { generateSingleProductWhatsAppLink } from '@/lib/whatsapp';
@@ -78,7 +79,7 @@ export default function WeeklyOffers({
 
       {/* Offers Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {offerProducts.map((product) => {
+        {offerProducts.map((product, index) => {
           const discountPercent = product.oldPrice
             ? Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)
             : null;
@@ -91,9 +92,13 @@ export default function WeeklyOffers({
           const whatsappUrl = generateSingleProductWhatsAppLink(product, currentVehicle);
 
           return (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
               key={product.id}
-              className="bg-white p-4 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between group"
+              className="bg-white p-4 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
             >
               <div>
                 {/* Product Image Box */}
@@ -198,7 +203,7 @@ export default function WeeklyOffers({
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
