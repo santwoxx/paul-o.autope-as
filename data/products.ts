@@ -205,5 +205,42 @@ export const PRODUCTS: AutoPart[] = [
       'Tipo': 'Pivô',
     },
     shelfLocation: 'Corredor S - Prateleira 3',
+  },
+  {
+    id: 'part-06',
+    name: 'Terminal de Direção Nakata N-6012',
+    code: 'N-6012',
+    brand: 'Nakata',
+    category: 'suspensao',
+    price: 67.00,
+    oldPrice: 80.00,
+    isWeeklyOffer: false,
+    stockCount: 18,
+    rating: 4.8,
+    reviewsCount: 10,
+    warrantyMonths: 6,
+    condition: 'Novo Original',
+    mainImage: '/images/products/nakata-n6012-1.jpg',
+    stockPhotos: [
+      {
+        url: '/images/products/nakata-n6012-1.jpg',
+        caption: 'Foto real do terminal de direção na caixa',
+      },
+      {
+        url: '/images/products/nakata-n6012-2.jpg',
+        caption: 'Detalhe do terminal de direção',
+      }
+    ],
+    compatibleBrands: ['Volkswagen', 'Ford', 'Chevrolet', 'Fiat'],
+    compatibleModels: ['Gol', 'Fox', 'Palio', 'Onix'],
+    yearStart: 2005,
+    yearEnd: 2024,
+    description: 'Terminal de direção Nakata, peça fundamental para o sistema de direção, garantindo segurança e precisão nas manobras.',
+    specifications: {
+      'Posição': 'Direção',
+      'Lado': 'Esquerdo/Direito',
+      'Tipo': 'Terminal',
+    },
+    shelfLocation: 'Corredor S - Prateleira 4',
   }
 ];
