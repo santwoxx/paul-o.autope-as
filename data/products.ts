@@ -168,5 +168,42 @@ export const PRODUCTS: AutoPart[] = [
       'Tipo': 'Articulação Axial',
     },
     shelfLocation: 'Corredor S - Prateleira 2',
+  },
+  {
+    id: 'part-05',
+    name: 'Pivô de Suspensão Nakata N-6058',
+    code: 'N-6058',
+    brand: 'Nakata',
+    category: 'suspensao',
+    price: 50.00,
+    oldPrice: 65.00,
+    isWeeklyOffer: false,
+    stockCount: 15,
+    rating: 4.8,
+    reviewsCount: 22,
+    warrantyMonths: 6,
+    condition: 'Novo Original',
+    mainImage: '/images/products/nakata-n6058-1.jpg',
+    stockPhotos: [
+      {
+        url: '/images/products/nakata-n6058-1.jpg',
+        caption: 'Foto real do produto Nakata na caixa',
+      },
+      {
+        url: '/images/products/nakata-n6058-2.jpg',
+        caption: 'Detalhe do pivô de suspensão',
+      }
+    ],
+    compatibleBrands: ['Volkswagen', 'Ford', 'Chevrolet', 'Fiat'],
+    compatibleModels: ['Gol', 'Fox', 'Palio', 'Onix'],
+    yearStart: 2005,
+    yearEnd: 2024,
+    description: 'Pivô de suspensão Nakata de alta qualidade, garantindo maior durabilidade e estabilidade na condução do veículo.',
+    specifications: {
+      'Posição': 'Suspensão',
+      'Lado': 'Esquerdo/Direito',
+      'Tipo': 'Pivô',
+    },
+    shelfLocation: 'Corredor S - Prateleira 3',
   }
 ];
