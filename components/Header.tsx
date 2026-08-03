@@ -37,7 +37,7 @@ export default function Header({
   onSearchChange,
 }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-orange-100 shadow-sm">
+    <header className="relative md:sticky md:top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-orange-100 shadow-sm">
       {/* Top Banner Bar */}
       <div className="hidden sm:block bg-neutral-900 text-white text-xs py-1.5 px-4 sm:px-8 border-b border-neutral-800">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
