@@ -6,6 +6,7 @@ import { AutoPart } from '@/data/products';
 import { Check, Eye, MessageSquare, Shield, Tag, Camera, MapPin } from 'lucide-react';
 import { generateSingleProductWhatsAppLink } from '@/lib/whatsapp';
 import { VehicleSelection } from './VehicleSelector';
+import Link from 'next/link';
 
 interface ProductCardProps {
   product: AutoPart;
@@ -38,10 +39,10 @@ export default function ProductCard({
     >
       <div>
         {/* Top Image area */}
-        <div
-          className="h-36 bg-neutral-100 rounded-xl mb-3 relative overflow-hidden cursor-pointer"
-          onClick={() => onOpenStockModal(product)}
-        >
+        <Link href={`/produto/${product.id}`} className="block">
+          <div
+            className="h-36 bg-neutral-100 rounded-xl mb-3 relative overflow-hidden cursor-pointer"
+          >
           <img
             src={product.mainImage}
             alt={product.name}
@@ -77,6 +78,7 @@ export default function ProductCard({
             </span>
           </div>
         </div>
+        </Link>
 
         {/* Category Tag */}
         <p className="text-xs text-orange-600 font-bold uppercase tracking-wider mb-1">
@@ -84,12 +86,13 @@ export default function ProductCard({
         </p>
 
         {/* Title */}
-        <h4
-          onClick={() => onOpenStockModal(product)}
-          className="font-bold text-neutral-800 text-sm line-clamp-2 hover:text-orange-600 transition-colors cursor-pointer mb-2.5"
-        >
-          {product.name}
-        </h4>
+        <Link href={`/produto/${product.id}`} className="block">
+          <h4
+            className="font-bold text-neutral-800 text-sm line-clamp-2 hover:text-orange-600 transition-colors cursor-pointer mb-2.5"
+          >
+            {product.name}
+          </h4>
+        </Link>
 
         {/* Compatibility Pill */}
         {isCompatible !== null && (
