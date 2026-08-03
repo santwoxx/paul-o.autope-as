@@ -242,5 +242,42 @@ export const PRODUCTS: AutoPart[] = [
       'Tipo': 'Terminal',
     },
     shelfLocation: 'Corredor S - Prateleira 4',
+  },
+  {
+    id: 'part-07',
+    name: 'Jogo de Pastilhas de Freio Dianteira SYL 1419',
+    code: 'SYL1419',
+    brand: 'SYL',
+    category: 'freios',
+    price: 86.00,
+    oldPrice: 105.00,
+    isWeeklyOffer: false,
+    stockCount: 8,
+    rating: 4.7,
+    reviewsCount: 15,
+    warrantyMonths: 3,
+    condition: 'Novo Original',
+    mainImage: '/images/products/syl-1419-1.jpg',
+    stockPhotos: [
+      {
+        url: '/images/products/syl-1419-1.jpg',
+        caption: 'Foto real do jogo de pastilhas na caixa',
+      },
+      {
+        url: '/images/products/syl-1419-2.jpg',
+        caption: 'Detalhe das pastilhas de freio SYL',
+      }
+    ],
+    compatibleBrands: ['Volkswagen', 'Fiat', 'Chevrolet'],
+    compatibleModels: ['Gol', 'Fox', 'Palio', 'Celta'],
+    yearStart: 2008,
+    yearEnd: 2024,
+    description: 'Jogo de pastilhas de freio dianteira SYL, alta durabilidade e frenagem segura sem ruídos.',
+    specifications: {
+      'Posição': 'Dianteira',
+      'Material': 'Sem amianto',
+      'Tipo': 'Pastilha de Freio',
+    },
+    shelfLocation: 'Corredor F - Prateleira 1',
   }
 ];
